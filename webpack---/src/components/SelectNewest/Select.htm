@@ -1,0 +1,11 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"select",staticClass:"lx-select-newest",class:{ fixed: _vm.fixed, 'with-error': _vm.errorMsg, 'with-native-select': _vm.native }},[(_vm.selectLabel)?_c('lx-form-field-label',{staticClass:"label",attrs:{"required":_vm.required}},[_vm._v(_vm._s(_vm.selectLabel))]):_vm._e(),_c('div',{staticClass:"select-container"},[_c('multiselect',_vm._g(_vm._b({staticClass:"multiselect",class:{
+        'multiselect-readonly': _vm.readonly,
+      },attrs:{"searchable":_vm.searchable,"placeholder":_vm.placeholder,"selectLabel":"","deselectLabel":"","selectedLabel":"","disabled":_vm.disabled || _vm.readonly,"label":_vm.label,"options":_vm.options,"value":_vm.value},scopedSlots:_vm._u([{key:"noResult",fn:function(){return [_vm._t("noResults",function(){return [_c('span',[_vm._v("No results")])]})]},proxy:true},{key:"caret",fn:function(toggle){return [_vm._t("caret",function(){return [_c('div',{staticClass:"toggle-icon-container"},[_c('lx-icon',{staticClass:"toggle-icon",attrs:{"icon":"arrow-down","size":"12,8"}})],1)]},null,toggle)]}},{key:"singleLabel",fn:function(props){return [_vm._t("singleLabel",null,null,props)]}},{key:"option",fn:function(props){return [_vm._t("option",null,null,props)]}}],null,true)},'multiselect',Object.assign({}, {optionHeight: 48,
+        maxHeight: 144},
+        _vm.$attrs),false),Object.assign({}, _vm.$listeners,
+        {input: _vm.onInput,
+        open: _vm.openSelect,
+        'search-change': _vm.onSearchChange})),[_c('template',{slot:"placeholder"},[_vm._t("placeholder")],2),_c('template',{slot:"tag"},[_vm._t("tag")],2),_c('template',{slot:"noOptions"},[_vm._t("noOptions")],2)],2),(_vm.showNative)?_c('no-ssr',[_c('select',{staticClass:"native-select",attrs:{"disabled":_vm.disabled || _vm.readonly},on:{"input":_vm.onNativeInput}},_vm._l((_vm.options),function(option,id){return _c('option',{key:id,domProps:{"selected":_vm.optionIsSelected(option)}},[_vm._v(_vm._s(option[_vm.label]))])}),0)]):_vm._e(),(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"select-loader",attrs:{"fill":""}}):_vm._e()],1),_c('lx-validation-error',{attrs:{"error":_vm.errorMsg,"static":""}})],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

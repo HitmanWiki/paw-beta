@@ -1,0 +1,9 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('lx-menu-new',{staticClass:"root lx-select-new",class:{
+    'with-error': _vm.hasError,
+    loading: _vm.loading,
+    disabled: _vm.disabled,
+    opened: _vm.opened,
+  },attrs:{"placement":"bottom","disabled":_vm.disabled || _vm.loading,"onHide":_vm.onHide,"distance":_vm.distance,"closeOnClick":""},on:{"onShow":_vm.onShow}},[_c('template',{slot:"trigger"},[_vm._t("select-trigger",function(){return [_c('div',{staticClass:"select-trigger"},[(!_vm.multiply && _vm.selectedOption)?_c('span',{staticClass:"select-trigger-value"},[_vm._v(_vm._s(_vm.selectedOption.label))]):_c('span',{staticClass:"select-trigger-label"},[_vm._v(_vm._s(_vm.placeholder || 'Select'))]),_c('lx-icon',{staticClass:"select-trigger-icon",attrs:{"icon":"arrow-down"}})],1),(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"loader"}):_vm._e()]}),_c('lx-validation-error',{attrs:{"error":_vm.errorMsg,"static":_vm.errStatic}})],2),_vm._t("default",function(){return [_c('div',{staticClass:"select-body",class:_vm.bodyClass},[(_vm.options.length)?[_vm._l((_vm.options),function(option){return [_vm._t("option",function(){return [_c('div',{staticClass:"select-item",class:{ selected: _vm.isSelected(option) },on:{"click":function($event){return _vm.onOptionClick(option)}}},[_vm._v(_vm._s(option.label))])]},{"option":option})]})]:_vm._t("no-options")],2)]})],2)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

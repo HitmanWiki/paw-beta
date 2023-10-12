@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('lx-modal',{staticClass:"root confirm-2fa",on:{"close":_vm.cancel}},[_c('h2',{staticClass:"modal-header"},[_vm._v("2FA Code")]),_c('form',{attrs:{"data-vv-scope":"fa2Form"},on:{"submit":function($event){$event.preventDefault();return _vm.onSubmit.apply(null, arguments)}}},[_c('tfa-code-input',{staticClass:"tfa-code",attrs:{"autofocus":"","errorMsg":_vm.errors.first('key', 'fa2Form')},on:{"filled":_vm.autoSubmit},model:{value:(_vm.key),callback:function ($$v) {_vm.key=$$v},expression:"key"}}),_c('lx-button',{attrs:{"type":"submit","theme":"blue-medium","loading":_vm.isLoading,"disabled":_vm.key.length !== 6}},[_vm._v("Confirm")])],1)])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

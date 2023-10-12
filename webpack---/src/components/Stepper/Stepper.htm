@@ -1,0 +1,7 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"root lx-stepper"},[_vm._t("label",function(){return [_c('h3',{staticClass:"step-label"},[_vm._v("Step "+_vm._s(_vm.value)+" of "+_vm._s(_vm.stepsCount))])]}),_c('div',{staticClass:"step-bar"},_vm._l((_vm.stepsCount),function(i){return _c('div',{key:i,staticClass:"step",class:{
+        clickable: _vm.clickable,
+        filled: i <= _vm.value,
+      },on:{"click":function($event){return _vm.onStepClick(i)}}})}),0)],2)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

@@ -1,0 +1,15 @@
+import { Blockchain } from './common'
+
+export const SWAP_TOKENS_GAS_LIMIT_MULTIPLIER = 1.2
+export const SWAP_TOKENS_GAS_PRICE_MULTIPLIER = 1.2
+export const SWAP_GAS_LIMIT_FIXED = 300000
+
+const NETWORK_ETHEREUM_FOR_SWAP = process.env.VUE_APP_NETWORK_ETHEREUM_FOR_SWAP
+const NETWORK_BINANCE_FOR_SWAP = process.env.VUE_APP_NETWORK_BINANCE_FOR_SWAP
+const NETWORK_POLYGON_FOR_SWAP = process.env.VUE_APP_NETWORK_POLYGON_FOR_SWAP
+
+export const NETWORK_IDS_FOR_SWAP = {
+  [Blockchain.Ethereum]: NETWORK_ETHEREUM_FOR_SWAP,
+  [Blockchain.Binance]: NETWORK_BINANCE_FOR_SWAP,
+  [Blockchain.Polygon]: NETWORK_POLYGON_FOR_SWAP,
+}

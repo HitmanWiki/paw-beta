@@ -1,0 +1,6 @@
+var render = function () {
+var _obj;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"numeric-input-root",class:( _obj = { 'with-error': _vm.hasError }, _obj[("theme-" + _vm.theme)] = true, _obj ),attrs:{"loading":_vm.loading}},[(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"loader"}):_vm._e(),_c('div',{staticClass:"numeric-input-items"},[(_vm.prefixText)?_c('div',{staticClass:"numeric-input-prefix"},[_vm._v(_vm._s(_vm.prefixText))]):_vm._e(),_c('vue-numeric',_vm._g(_vm._b({ref:"numeric",staticClass:"numeric-input-field",style:({ 'width': _vm.fullWidth || _vm.readOnly ? "100%" : (_vm.inputWidth + "px") }),attrs:{"type":_vm.inputType,"value":_vm.value,"readOnly":_vm.readOnly,"readOnlyClass":"numeric-input-readonly","precision":_vm.precision},on:{"input":_vm.handleResize}},'vue-numeric',_vm.$attrs,false),_vm.$listeners)),(_vm.suffixText)?_c('div',{staticClass:"numeric-input-suffix"},[_vm._v(_vm._s(_vm.suffixText))]):_vm._e()],1),_c('div',{ref:"widthDiv",staticClass:"width-calculate-sizer",attrs:{"id":("width-div-" + _vm.uniqueId)}},[_vm._v("\n    "+_vm._s(_vm.outputCurrency(_vm.value, { minDecimal: _vm.precision, maxDecimal: _vm.precision }))+"\n  ")]),_c('lx-validation-error',{attrs:{"error":_vm.errorMsg,"static":_vm.errStatic}})],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

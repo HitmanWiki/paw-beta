@@ -1,0 +1,6 @@
+var render = function () {
+var _obj;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"root lx-input",class:( _obj = { 'with-error': _vm.hasError, 'with-icon': _vm.icon }, _obj[("theme-" + _vm.theme)] = true, _obj['static-err'] =  _vm.errStatic, _obj.loading = _vm.loading, _obj )},[(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"loader"}):_vm._e(),_c('input',_vm._g(_vm._b({ref:"input",attrs:{"disabled":_vm.loading || _vm.disabled,"autofocus":_vm.autofocus},domProps:{"value":_vm.value}},'input',_vm.$attrs,false),Object.assign({}, _vm.$listeners, {input: _vm.onInput}))),(_vm.icon)?_c('lx-button',{staticClass:"btn",attrs:{"type":"button","theme":"icon","icon":_vm.icon,"iconSize":_vm.iconSize},on:{"click":_vm.onClickIcon}}):_vm._e(),_c('lx-validation-error',{attrs:{"error":_vm.errorMsg,"static":_vm.errStatic}})],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

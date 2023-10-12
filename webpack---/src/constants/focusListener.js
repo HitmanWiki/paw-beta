@@ -1,0 +1,2 @@
+export const VERTICAL_OFFSET_TABLET = -120
+export const VERTICAL_OFFSET_PC = -70

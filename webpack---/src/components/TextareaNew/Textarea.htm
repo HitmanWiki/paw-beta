@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"root textarea-new",class:{ 'with-error': _vm.hasError, 'with-label': _vm.label }},[(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"loader"}):_vm._e(),(_vm.label)?_c('div',{staticClass:"input-label"},[_c('span',[_vm._v(_vm._s(_vm.label))]),(_vm.required)?_c('div',{staticClass:"required-marker"}):_vm._e()]):_vm._e(),(!_vm.loading && _vm.max)?_c('span',{staticClass:"limit"},[_vm._v(_vm._s(_vm.val.length)+"/"+_vm._s(_vm.max))]):_vm._e(),_c('textarea',_vm._g(_vm._b({},'textarea',Object.assign({}, _vm.$attrs, {maxlength: _vm.max, value: _vm.val}),false),Object.assign({}, _vm.$listeners, {input: _vm.onInput}))),_c('lx-validation-error',{attrs:{"error":_vm.errorMsg,"static":_vm.errStatic}})],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

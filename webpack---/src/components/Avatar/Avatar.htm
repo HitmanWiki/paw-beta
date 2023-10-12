@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"root lx-avatar"},[(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"loader"}):_c('img',_vm._b({attrs:{"src":_vm.src,"srcset":_vm.srcset,"sizes":_vm.srcSizes,"alt":"Avatar","loading":"lazy"}},'img',_vm.imgAttrs,false)),(!_vm.loading && _vm.accountType.isPremium)?_c('lx-tooltip',{attrs:{"placement":"bottom"}},[_c('lx-icon',{staticClass:"icon",attrs:{"src":_vm.accountType.icon,"size":_vm.isSmall ? '29,44' : '41,44',"alt":_vm.accountType.title}}),_c('template',{slot:"popover"},[_c('span',{staticClass:"tooltip-content"},[_vm._v(_vm._s(_vm.accountType.title))])])],2):_vm._e()],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

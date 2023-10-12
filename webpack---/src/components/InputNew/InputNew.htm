@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"root lx-input-new",class:{ 'with-error': _vm.hasError, 'static-err': _vm.errStatic, loading: _vm.loading }},[(_vm.inputLabel)?_c('lx-form-field-label',{staticClass:"input-label",attrs:{"required":_vm.required}},[_vm._v(_vm._s(_vm.inputLabel))]):_vm._e(),_c('div',{staticClass:"input-container"},[_c('input',_vm._g(_vm._b({ref:"input",attrs:{"disabled":_vm.loading || _vm.disabled,"autofocus":_vm.autofocus},domProps:{"value":_vm.value}},'input',_vm.$attrs,false),Object.assign({}, _vm.$listeners, {input: _vm.onInput}))),(_vm.loading)?_c('lx-skeleton-loader',{staticClass:"loader"}):_vm._e()],1),_c('lx-validation-error',{attrs:{"error":_vm.errorMsg,"static":_vm.errStatic}})],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }
